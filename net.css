@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/back.jpg);
+    height: 80vh;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 644px;
+
+
+}
+
+.main .box {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.69;
+    background-color: black;
+
+}
+
+nav {
+    max-width: 80vw;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 62px;
+}
+
+nav img {
+    width: 110px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    position: relative;
+    gap: 17px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    display: flex;
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 53px;
+
+}
+
+.hero> :nth-child(2) {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+
+}
+
+.sepration {
+    height: 5px;
+    background-color: rgb(100, 97, 97);
+
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 500;
+
+}
+
+.btn-get {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 4px;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn-sign {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    line-height: 11px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main input {
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 4px;
+    font-weight: 400;
+    padding: 7px 101px 8px 14px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(23, 23, 23, 0.5);
+    cursor: auto;
+    color: white;
+
+
+}
+
+.first {
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 530px;
+    position: relative;
+    z-index: 10;
+    left: 10px;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 490px;
+    overflow: visible;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 18px;
+
+}
+
+.watch2 {
+    padding-left: 12px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 30px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 15px;
+    max-width: 50vw;
+    margin: 15px auto;
+    cursor: pointer;
+
+}
+
+.faqbox:hover {
+    background-color: #6a6a6a;
+
+}
+
+.faq svg {
+    filter: invert(1);
+}
+
+footer a {
+    color: white;
+    font-size: 14px;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .fot {
+
+    font-size: 20px;
+    margin: 13px 6vw;
+    color: white;
+    font-weight: 500;
+    
+}
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+}
+/* ============================================
+   Netflix Clone - Responsive Media Queries
+   Separate CSS File for Responsive Design
+   ============================================ */
+
+/* Large Desktop Devices (up to 1440px) */
+@media screen and (max-width: 1440px) {
+    .first {
+        max-width: 85vw;
+    }
+    
+    .secImg img {
+        width: 480px;
+    }
+    
+    .secImg video {
+        width: 440px;
+        top: 46px;
+    }
+    
+    .faqbox {
+        max-width: 65vw;
+    }
+    
+    .faq-answer {
+        max-width: 65vw !important;
+    }
+}
+
+/* Standard Desktop / Laptop (1024px - 1300px) */
+@media screen and (max-width: 1300px) {
+    .main {
+        height: 70vh;
+        background-size: cover;
+    }
+    
+    .main .box {
+        height: 70vh;
+    }
+    
+    .hero > :nth-child(1) {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    
+    .first {
+        max-width: 90vw;
+        gap: 30px;
+    }
+    
+    .secImg img {
+        width: 450px;
+    }
+    
+    .secImg video {
+        width: 410px;
+        top: 43px;
+    }
+    
+    section.first > div :nth-child(1) {
+        font-size: 38px;
+    }
+    
+    section.first > div :nth-child(2) {
+        font-size: 16px;
+    }
+    
+    .faq h2 {
+        font-size: 40px;
+    }
+    
+    .faqbox {
+        max-width: 75vw;
+        font-size: 16px;
+    }
+    
+    .faq-answer {
+        max-width: 75vw !important;
+        font-size: 16px !important;
+    }
+    
+    .footer {
+        max-width: 80vw;
+        gap: 30px;
+    }
+}
+
+/* Tablet Devices (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+    .main {
+        height: 65vh;
+    }
+    
+    .main .box {
+        height: 65vh;
+    }
+    
+    nav {
+        max-width: 90vw;
+        padding: 0 15px;
+    }
+    
+    nav img {
+        width: 90px;
+    }
+    
+    .hero > :nth-child(1) {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    
+    .hero > :nth-child(2) {
+        font-size: 14px;
+    }
+    
+    .hero > :nth-child(3) {
+        font-size: 11px;
+    }
+    
+    .btn-get {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    
+    .main input {
+        padding: 8px 60px 8px 14px;
+        font-size: 11px;
+    }
+    
+    .first {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+        gap: 20px;
+    }
+    
+    .second {
+        flex-direction: column-reverse;
+    }
+    
+    .secImg img {
+        width: 100%;
+        max-width: 500px;
+        left: 0;
+    }
+    
+    .secImg video {
+        width: 90%;
+        max-width: 450px;
+        top: 13%;
+        left: 5%;
+        right: auto;
+    }
+    
+    section.first > div {
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    section.first > div :nth-child(1) {
+        font-size: 32px;
+    }
+    
+    section.first > div :nth-child(2) {
+        font-size: 15px;
+        max-width: 80%;
+    }
+    
+    .watch2 {
+        padding-left: 0;
+    }
+    
+    .faq h2 {
+        font-size: 32px;
+    }
+    
+    .faqbox {
+        max-width: 85vw;
+        padding: 12px 18px;
+    }
+    
+    .faq-answer {
+        max-width: 85vw !important;
+        padding: 15px !important;
+    }
+    
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 85vw;
+        gap: 35px;
+    }
+    
+    footer .fot {
+        font-size: 18px;
+        margin: 13px 5vw;
+    }
+}
+
+/* Small Tablets & Large Phones (481px - 767px) */
+@media screen and (max-width: 767px) {
+    .main {
+        height: 60vh;
+    }
+    
+    .main .box {
+        height: 60vh;
+    }
+    
+    nav {
+        max-width: 95vw;
+    }
+    
+    nav img {
+        width: 75px;
+    }
+    
+    .btn-sign {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    
+    .hero {
+        gap: 12px;
+        padding: 0 20px;
+    }
+    
+    .hero > :nth-child(1) {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .hero > :nth-child(2) {
+        font-size: 12px;
+    }
+    
+    .hero > :nth-child(3) {
+        font-size: 10px;
+    }
+    
+    .hero-btn {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .hero-btn input {
+        width: 80%;
+        padding: 12px 16px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    
+    .btn-get {
+        width: auto;
+        min-width: 160px;
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+    
+    .btn-get br {
+        display: none;
+    }
+    
+    .first {
+        padding: 25px 0;
+    }
+    
+    .secImg img {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .secImg video {
+        width: 82%;
+        max-width: 350px;
+        top: 12%;
+        left: 9%;
+    }
+    
+    section.first > div :nth-child(1) {
+        font-size: 26px;
+    }
+    
+    section.first > div :nth-child(2) {
+        font-size: 14px;
+        max-width: 90%;
+    }
+    
+    .faq {
+        padding: 20px 15px;
+    }
+    
+    .faq h2 {
+        font-size: 26px;
+    }
+    
+    .faqbox {
+        max-width: 95vw;
+        font-size: 14px;
+        padding: 12px 16px;
+        margin: 12px auto;
+    }
+    
+    .faq-answer {
+        max-width: 95vw !important;
+        font-size: 14px !important;
+        padding: 12px !important;
+        margin: -3px auto 12px auto !important;
+    }
+    
+    .faqbox svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .footer {
+        grid-template-columns: 1fr;
+        max-width: 90vw;
+        gap: 25px;
+        padding: 25px;
+    }
+    
+    .footer-item {
+        gap: 12px;
+    }
+    
+    footer .fot {
+        font-size: 16px;
+        margin: 13px 5vw;
+        text-align: center;
+    }
+    
+    footer a {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Phones (up to 480px) */
+@media screen and (max-width: 480px) {
+    .main {
+        height: 55vh;
+    }
+    
+    .main .box {
+        height: 55vh;
+    }
+    
+    nav img {
+        width: 65px;
+    }
+    
+    .btn-sign {
+        padding: 5px 10px;
+        font-size: 9px;
+    }
+    
+    .hero {
+        gap: 10px;
+    }
+    
+    .hero > :nth-child(1) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .hero > :nth-child(2) {
+        font-size: 11px;
+    }
+    
+    .hero > :nth-child(3) {
+        font-size: 9px;
+    }
+    
+    .hero-btn input {
+        width: 85%;
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+    
+    .btn-get {
+        font-size: 12px;
+        padding: 8px 20px;
+        min-width: 140px;
+    }
+    
+    section.first > div :nth-child(1) {
+        font-size: 22px;
+    }
+    
+    section.first > div :nth-child(2) {
+        font-size: 12px;
+    }
+    
+    .secImg video {
+        width: 80%;
+        max-width: 280px;
+        top: 10%;
+    }
+    
+    .faq h2 {
+        font-size: 22px;
+    }
+    
+    .faqbox {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+    
+    .faq-answer {
+        font-size: 12px !important;
+        padding: 10px !important;
+    }
+    
+    .footer {
+        padding: 20px;
+    }
+    
+    footer .fot {
+        font-size: 14px;
+    }
+    
+    footer a {
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Devices (up to 320px) */
+@media screen and (max-width: 320px) {
+    .hero > :nth-child(1) {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .btn-get {
+        font-size: 11px;
+        padding: 7px 16px;
+        min-width: 120px;
+    }
+    
+    .hero-btn input {
+        width: 90%;
+        padding: 8px 12px;
+    }
+    
+    section.first > div :nth-child(1) {
+        font-size: 18px;
+    }
+    
+    section.first > div :nth-child(2) {
+        font-size: 11px;
+    }
+    
+    .faq h2 {
+        font-size: 18px;
+    }
+    
+    .faqbox {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+}
+
+/* Landscape Mode for Mobile Devices */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .main {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .hero {
+        padding: 40px 20px;
+    }
+    
+    .hero > :nth-child(1) {
+        font-size: 28px;
+    }
+    
+    .first {
+        padding: 20px 0;
+    }
+    
+    .secImg img {
+        max-width: 350px;
+    }
+    
+    .secImg video {
+        width: 78%;
+        top: 12%;
+    }
+}
+
+/* High Resolution Displays (Retina) */
+@media screen and (min-width: 1920px) {
+    .main {
+        background-size: cover;
+        height: 70vh;
+    }
+    
+    .hero > :nth-child(1) {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    
+    .hero > :nth-child(2) {
+        font-size: 20px;
+    }
+    
+    .hero > :nth-child(3) {
+        font-size: 16px;
+    }
+    
+    .btn-get {
+        font-size: 22px;
+        padding: 14px 36px;
+    }
+    
+    .main input {
+        font-size: 16px;
+        padding: 12px 120px 12px 20px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .main {
+        background-image: none;
+        height: auto;
+    }
+    
+    .hero,
+    .first,
+    .faq,
+    footer {
+        color: black;
+    }
+    
+    .btn,
+    .hero-btn input,
+    video {
+        display: none;
+    }
+    
+    .sepration {
+        background-color: #ccc;
+        height: 1px;
+    }
+}
+
+/* Utility Classes for Responsive Design */
+.hide-on-mobile {
+    display: block;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    
+    .show-on-mobile {
+        display: block;
+    }
+}
+
+/* Fix for video autoplay on mobile browsers */
+@media screen and (max-width: 768px) {
+    video {
+        object-fit: contain;
+    }
+    
+    .secImg {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* Improved touch targets for mobile */
+@media screen and (max-width: 768px) {
+    .btn,
+    .faqbox,
+    .footer-item a {
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .faqbox:active {
+        background-color: #4a4a4a;
+        transform: scale(0.99);
+    }
+}
+
+/* Animation for FAQ answers on mobile */
+@media screen and (max-width: 768px) {
+    .faq-answer {
+        animation: slideDown 0.3s ease-out;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
